@@ -22,6 +22,123 @@ body {
     line-height: 1.6;
 }
 
+/*////////////////////////////////////////////////////////////////////////////*/
+
+
+ .contentt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+    }
+.profile {
+    display: flex;
+    background: linear-gradient(90deg, #1e1e1e,#0073b1);
+    color: white;
+    padding: 12px;
+    border-radius: 10px;
+    /* box-shadow: 0px 4px 10px rgba(0, 255, 0, 0.5); */
+    max-width: 1200px;
+    height: 400px;
+    width: 90%;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out, border-color 0.4s ease-in-out;
+}
+
+.profile:hover {
+    transform: scale(1.05); /* Slightly reduced from 1.1 for a more natural effect */
+    border-color: #00796b;
+    box-shadow: 0 0 20px rgba(0, 121, 107, 0.9);
+}
+
+        .profile-pic {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 30px;
+    border: 4px solid #ddd;
+    position: relative;
+    transition: transform 0.3s ease-in-out;
+    animation: glowing-border 2s infinite alternate;
+}
+
+@keyframes glowing-border {
+    0% {
+        border-color: #ddd;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+    100% {
+        border-color: #00bcd4;
+        box-shadow: 0 0 15px rgba(0, 188, 212, 0.8);
+    }
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
+    border-color: #00796b;
+    box-shadow: 0 0 20px rgba(0, 121, 107, 0.9);
+}
+
+        .summary {
+            flex: 1;
+            color: white;
+        }
+        .summary h1 {
+            margin: 0;
+            color: #ffffff;
+            font-size: 28px;
+        }
+        .summary p {
+            color: #ffffff;
+            line-height: 1.6;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background: #2ba1eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background: #022338;
+        }
+
+         /* Contact Section */
+         .contact {
+            background: linear-gradient(90deg, #1e1e1e,#02466b);
+            display: flex;
+            justify-content: center;
+            margin-top: 60px;
+            padding: 20px;
+            border-radius: 7px;
+        }
+        .contact a {
+
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-family: 'Poppins', sans-serif;
+            color: #fafafa;
+            transition: 0.3s;
+        }
+        .contact a:hover {
+            color: #0073b1; 
+        }
+        .contact .github:hover {
+            color: #000; 
+        }
+        .contact .gmail:hover {
+            color: #D14836; /* Official Gmail red */
+        }
+        span{
+            color: #2ba1eb;
+        }
+
+/*//////////////////////////////////////////////////////////////////////////*/
+
 /* Navbar */
 .navbar {
     display: flex;
