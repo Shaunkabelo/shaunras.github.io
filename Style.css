@@ -1,0 +1,328 @@
+/* Reset default margin and padding */
+:root {
+    --blur-effect: blur(90px);
+    --primary-green: #4CAF50;
+    --dark-background: #1b1f23;
+    --light-background: #e0f2f1;
+    --highlight-green: #66BB6A;
+    --hover-blue: #26A69A;
+    --text-color: #fff;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    width: 100%;
+    top: 0; /* Ensure it starts at the very top */
+    left: 0; /* Ensure it starts at the very left */
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.navbar a:hover, .navbar a.active {
+    color: #00d9ff;
+    background: rgba(16, 159, 156, 0.2);
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+/* Name on the far right */
+.navbar .name {
+    margin-left: auto; /* Pushes the name to the far right */
+    padding: 10px 15px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #00d9ff;
+    animation: colorChange 3s infinite alternate; /* Animation */
+}
+
+/* Color-changing animation */
+@keyframes colorChange {
+    0% {
+        color: #00d9ff;
+    }
+    25% {
+        color: #00c853;
+    }
+    50% {
+        color: #0d47a1;
+    }
+    75% {
+        color: #ff4081;
+    }
+    100% {
+        color: #ffeb3b;
+    }
+}
+
+/* Header */
+header {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    padding: 29px ; /* Added padding-top to account for the navbar */
+    background: linear-gradient(90deg, #0d47a1, #00c853);
+    /* box-shadow: 0px 4px 10px rgba(0, 255, 0, 0.5); */
+    top: 0;
+    
+}
+
+header h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+header h3 {
+    font-size: 1.2em;
+    opacity: 0.8;
+   
+}
+
+.content{
+    margin-top: 120px; /* Added margin-top to account for the fixed navbar */
+   
+}
+
+
+
+/* ========================================================================================================= */
+
+/* Projects Section */
+.projects-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    gap: 30px;  
+}
+
+.project {
+    width: 45%;
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #0d47a1;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 30px;
+}
+
+.project:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 121, 107, 0.9);
+}
+
+.project h3 {
+    color: #42a5f5;
+    text-transform: uppercase;
+}
+h5{
+color: #42a5f5;
+}
+.Head{
+    margin-left: 55px;
+}
+
+.Shead{
+    margin-left: 55px;
+}
+.project a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #0d47a1;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.project a:hover {
+    background-color: #00c853;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 40px;
+    background: #121212;
+}
+
+.contact a {
+    color: #00c853;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+
+.contact a:hover {
+    color: #42a5f5;
+}
+
+
+
+
+/* Containers */
+/* ================================================================================================================= */
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+}
+
+.left-display, .right-display {
+    width: 45%;
+    padding: 20px;
+    background: linear-gradient(90deg, #010101,#0073b1);
+    border-radius: 10px;
+    
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out, border-color 0.4s ease-in-out;
+}
+.left-display:hover, .right-display:hover{
+    transform: scale(1.05); /* Slightly reduced from 1.1 for a more natural effect */
+    border-color: #00796b;
+    box-shadow: 0 0 20px rgba(0, 121, 107, 0.9);
+}
+
+
+h2 {
+    color: #ffffff;
+    text-transform: uppercase;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 8px 0;
+    font-size: 1.1em;
+}
+
+/* ABOUT */
+/*=================================================================================================================*/
+
+.psam {
+    width: 92%;
+    padding: 20px;
+    background: linear-gradient(90deg, #0073b1, #010101);
+    border-radius: 10px;
+    
+    margin-left: 50px;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out, border-color 0.4s ease-in-out;
+}
+.psam:hover {
+    transform: scale(1.05); /* Slightly reduced from 1.1 for a more natural effect */
+    border-color: #00796b;
+    box-shadow: 0 0 20px rgba(0, 121, 107, 0.9);
+}
+
+
+/* SKILLS */
+/*=================================================================================================================*/
+/* Grid Layout for Skills */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: start;
+}
+
+
+/* Skills Container Layout */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+}
+
+
+/* Skills Container Layout */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px;
+    justify-content: center;
+    align-items: start;
+    margin-top: 20px;
+}
+
+/* Skill Section Styling */
+.skill-section {
+    
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(26, 135, 224, 0.5);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Font Awesome Icons Styling */
+.skill-section h2 i {
+    margin-right: 10px;
+    font-size: 30px;
+}
+.skill-section h3{
+    color: rgba(26, 135, 224, 0.5);
+    text-transform: uppercase;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 10px;
+   
+}
+
+.skill-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-section ul li {
+    background: linear-gradient(90deg, #010101,#0073b1);
+    color: #fff;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.skill-section ul li:hover {
+    transform: scale(1.05);
+}
+
+
+/* Font Awesome Icons Styling */
+.skill-section h2 i {
+    margin-right: 10px;
+    color: #0073b1;
+}
+
+
